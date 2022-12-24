@@ -149,6 +149,7 @@ button {
 footer {
   position: fixed;
   bottom: 0;
+  display:none;
   width: 100%;
   height: 20%;
   background-image: url("./images/nnnoise.svg");
