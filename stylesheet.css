@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  font-family: 'Press Start 2P', cursive;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  background-size: fill;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color:#7f1c68;
+  color: white;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(243, 243, 243);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(243, 243, 243);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 255, 255);
+}
+
+#top-bar {
+  background-image: url("./images/nnnoise2.svg");
+  padding: 15px;
+  background-color: #444444;
+}
+
+button {
+  font-size: 2em;
+  padding: 1em;
+  width: 2empx;
+  height: 2empx;
+  border: 0;
+  background-color: transparent;
+}
+
+#bottom{
+  display: flex;
+}
+
+#play_by_play{
+  padding: 10 10% 0% 10%;
+  font-size: 2em;
+}
+
+/*how to play button*/
+#how_to_play {
+  background-color: rgb(255, 183, 0);
+  border-radius: 10px;
+  font-size: 2em;
+  display: block;
+  cursor: pointer;
+}
+
+/*play again button*/
+#play_again{
+  background-color: rgb(255, 183, 0);
+  border-radius: 10px;
+  font-size: 2em;
+  display: none;
+}
+
+.rock {
+  background-image: url("./images/rock.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.paper {
+  background-image: url("./images/paper.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.scissors {
+  background-image: url("./images/scissors.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#main {
+  margin: 5% 5% 0% 5%;
+  display: flex;
+
+}
+
+#main>p {
+  position: absolute;
+  bottom: 0;
+  align-content: center;
+}
+
+#about-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  display: none;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  color: rgb(226, 226, 226);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  background-image: url("./images/nnnoise.svg");
+}
+
+footer>p {
+  color: white;
+}
+
+#game {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  justify-content: space-between;
+  align-items: center;
+    margin: auto;
+
+  /*all images come from 
+  https://www.vecteezy.com/vector-art/690865-rock-paper-scissors-line-icons */
+}
+
+#player_choice img {
+  max-width: 50%;
+  height: auto;
+
+}
+
+.versus {
+  font-size: 3em;
+}
+
+.play_count {
+  border: 1px solid red;
+
+  clear: right;
+  display: block;
+}
+
+#pc_choice img {
+  max-width: 50%;
+  height: auto;
+  padding-left:  20%;
+
+}
+
+#play {
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  font-size: 2em;
+  padding: 1em;
+  width: 2empx;
+  height: 2empx;
+  
+}
+
+#player_pick button {
+  max-width: 10%;
+  height: auto;
+}
+
+form{
+  padding-top: 15%;
+  display: block;
+  font-size: 1em;
+}

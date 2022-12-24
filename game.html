@@ -1,0 +1,78 @@
+<!-- background images: https://fffuel.co/nnnoise/
+    rock, paper, scissors icons: https://i.pinimg.com/originals/79/34/c6/7934c6cf66ceade7c2986687946067b2.jpg -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rock, Paper, Scissors </title>
+    <meta name="description" content="Client-side Project 1.">
+    <meta name="author" content="Aaron Canty">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+    <!-- https://favicon.io/emoji-favicons/video-game/ -->
+    <script src="js/game.js"></script>
+
+</head>
+<nav id="top-bar">
+    <a href="./images/secret.jpg">Welcome to Rock, Paper, Scissors!</a>
+</nav>
+
+<body>
+    <div id="about-overlay" onclick="off()">
+        <div id="text">
+            <h1>Welcome to Rock, Paper, Scissors.</h1>
+            <p>You are on the left, the computer is on the right.
+                <br><br>
+
+                Count to three - your fist turns into a rock, a sheet of paper, or a scissors.
+                <br><br>
+                The computer will do the same.
+                <br><br>
+                Scissors beats paper, paper beats rock, rock beats scissors.
+                First to 10 wins the game.
+                <br><br>
+            <h3>CLICK ME TO EXIT</h3>
+        </div>
+    </div>
+    <section id="game">
+        <div id="player_choice">
+            <img id="p_hand" src="./images/paper.png" alt="">
+        </div>
+        <div id="play_by_play"></div>
+        </div>
+        <div id="pc_choice">
+            <img id="pc_hand" src="./images/scissors.png" alt="">
+        </div>
+    </section>
+    <section id="play">
+        <div class="score"></div>
+        <div class="wins">Choose an option to start!</div>
+        <br>
+        <div id="player_pick">
+
+            <button class="rock" id="rock"></button>
+            <button class="paper" id="paper"></button>
+            <button class="scissors" id="scissors"></button>
+
+
+        </div>
+    </section>
+
+    <section id="bottom">
+        <button id="how_to_play" onclick="on()">HOW TO PLAY</button>
+        <button id="play_again" onclick="location.reload()">PLAY AGAIN</button>
+        </div>
+    </section>
+
+</body>
+<footer>
+    <p>&lt;&gt; Aaron Canty - 3rd Year Munster Technological University - Clientside Project 1 &lt;/&gt; <br>
+        <br>&lt;&gt; Powered by HTML, CSS, JavaScript and lots of caffeine &lt;/&gt;
+    </p>
+</footer>
+
+</html>
